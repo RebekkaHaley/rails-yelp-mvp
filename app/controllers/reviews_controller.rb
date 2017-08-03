@@ -11,6 +11,7 @@ class ReviewsController < ApplicationController
   end
 
   def new
+    @review = @restaurant.reviews.new
   end
 
   def create
